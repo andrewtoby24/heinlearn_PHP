@@ -22,7 +22,7 @@
     $foods = [
         "breakfast" => "Nan Gyi Thoke",
         "lunch" => "Pad Thai",
-        "dinner" => "Mala Xinguo",
+        "dinner" => "Mala Xinguo",                                                                                                                            
     ];
 
     //ksort() => Associate array ascending order according to key (key sort)

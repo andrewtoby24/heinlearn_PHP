@@ -17,7 +17,7 @@
     
     echo "<br>";
 
-    // Associate Array
+    // Associative Array
     $students = [
         "name" => "Mg Mg",
         "age" => 23,
@@ -46,4 +46,37 @@
             echo "<h3>$v</h3>";
         }
     }
+
+    // HTML in a PHP Code
+    foreach($foods as $key=>$items) {
+        echo "<h1> $key </h1>";
+        echo "<ul>";
+            foreach($items as $item) {
+                echo "<li>item</li>";
+            }
+        echo "</ul>";
+    }
 ?>
+
+
+// PHP in a HTML Code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php 
+        foreach($foods as $key=> $value){
+    ?>
+        <h1> <?php echo $key ?> </h1>
+        <ul>
+           <?php foreach($value as $v) { ?>
+            <li> <?php echo $v ?> </li>
+            <?php } ?>
+        </ul>
+    <?php } ?>
+</body>
+</html>
