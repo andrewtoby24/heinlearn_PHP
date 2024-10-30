@@ -1,7 +1,15 @@
 <?php
 
     session_start();
-    //PHPSESSID
+    // PHPSSID save in the browser server and save in the local storage under temp/sess_xxx_213
+    // php.ini session.gc_maxlifetime= 1440 (24 mins)
+
+    // Use in the Login System (Authentication)
+    // Shopping Cart System (e-commerce)
+    // User Preferences(Languages, Themes)
+    // Multi-step forms (Wizard)
+    // Flash messages(Notifications)
+
     $_SESSION["name"] = "Kaung Thant Si Thu";
     $_SESSION["email"] = "thantkaung501@gmail.com";
 

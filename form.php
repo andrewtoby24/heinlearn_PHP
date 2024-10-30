@@ -6,7 +6,7 @@
     <title>FORM PHP</title>
 </head>
 <body>
-    <form action="form_action.php" method="get" enctype="multipart/form-data">
+    <form action="form_action.php" method="post" enctype="multipart/form-data">
         <label for="name">Name</label>
         <input type="text" name="name" id="name">
         <br><br>

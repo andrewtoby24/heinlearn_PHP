@@ -4,7 +4,7 @@
         $_SESSION["email"] = $_POST["email"];
         $_SESSION["password"] = $_POST["password"];
         header("location:profile.php");
-    }
+    }else{ 
 ?>
 
 <!DOCTYPE html>
@@ -21,11 +21,21 @@
         <div class="row"> 
             <div class="offset-md-4 col-md-4">
                 <h1>Log In</h1>
-                <form action="">
-                    
+                <form action="<?php htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" name="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password ">
+                    </div>
+                    <button class="btn-outline-primary btn-lg" type="submit">Login</button>
                 </form>
             </div>
         </div>
     </div>
 </body>
 </html>
+
+<?php }  ?>
